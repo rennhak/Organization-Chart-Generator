@@ -1,0 +1,42 @@
+Organization Chart Generator
+----------------------------
+
+Living Dreams is a fast growing Non Profit Organization (NPO), which has many people joining or
+dropping out over time. It is cumbersome to manage some kind of Organizational chart by hand since
+a computer can do that for us automatically.
+
+This program will download and parse the necesary information and generate via GraphViz a simple
+Organizational Chart in various formats. These charts can then be used in presentations or other
+occasions.
+
+Requirements
+------------
+
+  o [OS]        GNU/Linux System or emulator (e.g. Cygwin)
+  o [Language]  Ruby 1.8.x & Rake or higher
+  o [Library]   LibCurl
+  o [Tools]     Graphviz Dot
+
+Examples
+--------
+
+% ruby lib/ocg.rb -h
+
+
+Development
+-----------
+
+% rake -T 
+
+
+
+Copyright
+---------
+
+(c) 2011, Living Dreams
+(c) 2011, Bjoern Rennhak
+
+  o MIT licence. http://www.opensource.org/licenses/mit-license.php
+  o GPLv2 license
+  o BSD license
+
