@@ -20,7 +20,7 @@ require 'rubygems'        # foreign gem's
 require 'mechanize'
 
 # = OCG is the main class which handles commandline interface and other central tasks in order to
-# extract the person data from the livingdreams.jp website.
+# extract the person data from the website.
 class OCG # {{{
 
   def initialize options = nil # {{{

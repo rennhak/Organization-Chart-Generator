@@ -1,7 +1,7 @@
 Organization Chart Generator
 ----------------------------
 
-Living Dreams is a fast growing Non Profit Organization (NPO), which has many people joining or
+Fast growing Non-Profit Organizations (NPO) have many people joining or
 dropping out over time. It is cumbersome to manage some kind of Organizational chart by hand since
 a computer can do that for us automatically.
 
@@ -9,20 +9,36 @@ This program will download and parse the necesary information and generate via G
 Organizational Chart in various formats. These charts can then be used in presentations or other
 occasions.
 
+It is currently based on PBWorks Wiki (Free version) and expects certain hardcoded pages that have
+"Team List" in it. From these pages tables are extracted and processed into a graphviz dot file.
+Finally, to provide a nice formatting and color layout a xsl sheet is used to beautify the SVG output.
+
+
 Requirements
 ------------
 
   o [OS]        GNU/Linux System or emulator (e.g. Cygwin)
   o [Language]  Ruby 1.8.x & Rake or higher
   o [Library]   Mechanize, Nokogiri
-  o [Tools]     Graphviz Dot
+  o [Tools]     Graphviz Dot, Xslproc
+
 
 Examples
 --------
 
+[Example 1 - Generate standard PNG]
+
 % cd lib
-% ./OCG.rb --config configuration/Living_Dreams.yaml -p <TYPEYOURPASSWORDHERE>
-% dot -Tpng people.dot > people.png
+% ./OCG.rb --config configuration/My_Config_file.yaml -p <TYPEYOURPASSWORDHERE>
+% dot -Tpng /tmp/organization.dot > /tmp/organization.png
+
+
+[Example 2 - Generate beautified SVG]
+
+% cd lib
+% ./OCG.rb --config configuration/My_Config_file.yaml -p <TYPEYOURPASSWORDHERE>
+% dot -Tsvg /tmp/organization.dot > /tmp/organization.svg
+% xsltproc ../base/diagram-tools/notugly.xsl /tmp/organization.svg > /tmp/organization_final.svg
 
 
 Development
@@ -35,7 +51,6 @@ Development
 Copyright
 ---------
 
-(c) 2011, Living Dreams
 (c) 2011, Bjoern Rennhak
 
   o MIT licence. http://www.opensource.org/licenses/mit-license.php
