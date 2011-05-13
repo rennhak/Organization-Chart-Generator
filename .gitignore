@@ -1,0 +1,9 @@
+.DS_Store
+log/*.log
+tmp/**/*
+db/*.sqlite3
+coverage
+doc/app/*
+*.swp
+lib/configurations/*
+examples/*
