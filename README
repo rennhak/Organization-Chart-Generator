@@ -14,13 +14,15 @@ Requirements
 
   o [OS]        GNU/Linux System or emulator (e.g. Cygwin)
   o [Language]  Ruby 1.8.x & Rake or higher
-  o [Library]   LibCurl
+  o [Library]   Mechanize, Nokogiri
   o [Tools]     Graphviz Dot
 
 Examples
 --------
 
-% ruby lib/ocg.rb -h
+% cd lib
+% ./OCG.rb --config configuration/Living_Dreams.yaml -p <TYPEYOURPASSWORDHERE>
+% dot -Tpng people.dot > people.png
 
 
 Development

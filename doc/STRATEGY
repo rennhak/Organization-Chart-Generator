@@ -1,0 +1,7 @@
+- Current system is based on the free version of PBWorks.
+- Every interesting entry in the Wiki for us contains the word "Team List"
+- In every subpage of "x Team List" there is a table which is originally imported from Excel
+- In this table there is name and position which we extract
+- This will be stored in a flatfile sqlite DB
+- From the DB we generate our dot file according to a simple hierarchy scheme
+

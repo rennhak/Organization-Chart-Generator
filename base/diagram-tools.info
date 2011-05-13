@@ -1,0 +1,13 @@
+Making Graphviz output pretty with XSL
+--------------------------------------
+
+SCM: https://github.com/vidarh/diagram-tools
+URL: http://www.hokstad.com/making-graphviz-output-pretty-with-xsl-updated.html
+
+Used to beautify the standard SVG output of graphviz.
+
+
+Example Usage
+-------------
+
+xsltproc $name.xsl $dot_output.svg > $dot_output_nice.svg

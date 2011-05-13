@@ -1,0 +1,46 @@
+---
+
+organization: "Living Dreams"
+software_target: "PBWorks"
+username: "bjoern.rennhak@gmail.com"
+password: ""
+base_url: "http://livingdreams.pbworks.com"
+login_url: "/w/session/login"
+
+roles_order:
+  - "Founder": 99
+  - "Executive Director": 95
+  - "Board of Directors": 90
+  - "Director of": 70
+  - "Business Manager": 65
+  - "Communications": 60
+  - "Manager": 50
+  - "Mgr": 50
+  - "Curator": 50
+  - "Consultant": 50
+  - "Admin": 50
+  - "Developer": 50
+  - "Camp Director": 50
+
+
+global_groups_order: [ "Core", "Administration", "Volunteers" ]
+
+global_groups:
+  - core: [ "Founder", "Executive Director", "Board of Directors" ]
+  - administration: [ "Admin", "Communications", "Director", "Business Manager", "Technology Program Developer" ]
+  - volunteers: [ "Manager", "Mgr", "Curator", "Consultant", "Developer", "HCM" ]
+
+volunteers_groups:
+  - arts: [ "Arts Curator" ]
+  - home_communications: [ "Home Communications Manager", "HCM" ]
+  - learning: [ "Learning Mgr.", "Learning Manager" ]
+  - sports: [ "Sports Curator" ]
+  - technology: [ "Technology Curator" ]
+  - partner_relations: [ "Special Partner Program Mgr." ]
+  - psychologists: [ "Clinical Psychologist Consultant" ]
+
+add_persons:
+  - founder: [ "Patrick Newell", "Ikuko Newell" ]
+  - executive_director: [ "Amy Moyers" ]
+  - business_manager: [ "Shigeo Otsu" ]
+
