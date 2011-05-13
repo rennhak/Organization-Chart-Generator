@@ -13,6 +13,9 @@ It is currently based on PBWorks Wiki (Free version) and expects certain hardcod
 "Team List" in it. From these pages tables are extracted and processed into a graphviz dot file.
 Finally, to provide a nice formatting and color layout a xsl sheet is used to beautify the SVG output.
 
+Note: This software will be probably useless to you in case you don't use PBWorks and a certain
+      pattern inside the wiki.
+
 
 Requirements
 ------------
